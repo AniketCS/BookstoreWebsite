@@ -1,20 +1,4 @@
-# L20 ACTIVITY LAB RESUBMISSION- LAB 6
-
-** The lab 6 has been modified for L20 lab resubmission. Only shopping_cart.php page has been changed to correctly update cart total when user changes quanitities of Books in the cart.
-
-
-**This is PHP multi page website of a bookstore catalogue. Website allows the users to select items from catalog into their shopping carts.
-
-
-* *Date Created*: 31 10 2023
-* *Last Modification Date*: 21 11 2023
-* *Lab URL*: https://web.cs.dal.ca/~aniketm/csci2170/lab6
-* *Git URL*: https://git.cs.dal.ca/aniketm/csci-2170/-/tree/main/labs/lab6
-
-
-## Authors
-
-* [Aniket Mukherjee](an469681@dal.ca) 
+This is PHP multi page website of a bookstore catalogue. Website allows the users to select items from catalog into their shopping carts.
 
 ## Getting started
 
