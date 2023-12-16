@@ -2,7 +2,7 @@ This is PHP multi page website of a bookstore catalogue. Website allows the user
 
 ## Getting started
 
-The PHP page can be viewed either by running it locally on MAMP or by going to the above mentioned Timberlea url.
+The PHP page can be viewed either by running it locally on MAMP.
 
 ## Sources Used
 
