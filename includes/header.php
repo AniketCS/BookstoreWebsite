@@ -1,16 +1,18 @@
 <?php
-if (isset($_COOKIE['username'])) {
-    $welcome_message = 'Welcome back ' . $_COOKIE['username'];
+session_start();
+if (isset($_SESSION['username'])) {
+    $welcome_message = 'Welcome back ' . $_SESSION['username'];
     $logging_link = '<a href="includes/logout.php" class="btn btn-secondary" style="position: absolute; top: 10px; right: 10px;">Log Out</a>';
     
-    $visit_count_cookie_name = $_COOKIE['username'] . '_visit_count';
+    $visit_count_cookie_name = $_SESSION['username'] . '_visit_count';
 
     if (isset($_COOKIE[$visit_count_cookie_name])) {
         $visit_count = $_COOKIE[$visit_count_cookie_name];
     } else {
         $visit_count = 0;
     }
-} else {
+} 
+else {
     $logging_link = '<a href="includes/login.php" class="btn btn-secondary" style="position: absolute; top: 10px; right: 10px;">Log In</a>';
     $visit_count = 0;
 }
@@ -27,4 +29,3 @@ if (isset($_COOKIE['username'])) {
 <body>
     <div class="container mt-5">
         <div class="jumbotron text-center bg-light">
-        

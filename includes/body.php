@@ -1,10 +1,14 @@
+<?php 
+session_start();
+?>
 <?= $logging_link ?>
 <a href="shopping_cart.php" class="btn btn-primary" style="position: absolute; top: 10px; right: 100px;">Shopping Cart</a>
 
 <?php if (isset($welcome_message)) : ?>
     <p><?= $welcome_message ?></p>
-    <p>Your visit Count: <?= $visit_count ?></p>
+    <a href="profile.php" class="btn btn-warning btn-block" style="position: absolute; top: 10px; left: 10px;">View Profile</a>
 <?php else : ?>
+    <a href="includes/registration.php" class="btn btn-warning btn-block" style="position: absolute; top: 10px; left: 10px;">Register</a>;
     <h1 class="display-4">Welcome to Our Bookstore</h1>
 <?php endif; ?>
 
