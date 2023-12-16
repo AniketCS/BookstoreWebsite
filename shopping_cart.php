@@ -34,6 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['empty_cart'])) {
     $cart = array();
     $quantity = array();
     $total = 0;
+
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['remove_item'])) {
@@ -68,6 +69,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_quantity'])) {
 
         $quantity[$isbn_to_update] = max(0, $new_quantity);
     }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['purchase_order'])) {
+    
+    // Clearing the cart after purchase
+    $_SESSION['cart'] = array();
+    $cart = array();
+    $quantity = array();
+    $total = 0;
+    
+    header("Location: index.php");
+    exit();
 }
 
 
@@ -122,6 +135,9 @@ include('includes/header.php');
 
 <a href="index.php" class="btn btn-primary" style="position: absolute; top: 10px; left: 100px;">Home/Continue Shopping</a>
 <form action="" method="post">
-<form action="" method="post">
     <input type="submit" name="empty_cart" class="btn btn-danger" style="position: absolute; top: 10px; right: 100px;" value="Empty Cart">
+</form>
+
+<form action="" method="post">
+    <input type="submit" name="purchase_order" class="btn btn-success" style="position: absolute; top: 10px; right: 250px;" value="Purchase Order">
 </form>
