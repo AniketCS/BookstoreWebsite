@@ -1,6 +1,6 @@
-# This is PHP multi page website of a bookstore catalogue. Website allows the users to select items from catalog into their shopping carts.
+This is PHP multi page website of a bookstore catalogue. Website allows the users to select items from catalog into their shopping carts.
 
-## Getting Started
+ **Getting Started **
 
 The PHP page can be viewed either by running it locally on MAMP.
 
