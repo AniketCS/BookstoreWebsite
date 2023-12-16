@@ -11,6 +11,7 @@ if (isset($_SESSION['username'])) {
     } else {
         $visit_count = 0;
     }
+    $view_orders_link = '<a href="orders.php" class="btn btn-success btn-block">View Orders</a>';
 } 
 else {
     $logging_link = '<a href="includes/login.php" class="btn btn-secondary" style="position: absolute; top: 10px; right: 10px;">Log In</a>';
@@ -29,3 +30,6 @@ else {
 <body>
     <div class="container mt-5">
         <div class="jumbotron text-center bg-light">
+        <?php
+            echo $view_orders_link;
+            ?>
